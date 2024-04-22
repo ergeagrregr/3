@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - 深廣</title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>計算長方形面積</title>
+    <script>
+        function calculateRectangleArea() {
+            // 取得使用者輸入的長和寬
+            var length = parseFloat(document.getElementById('length').value);
+            var width = parseFloat(document.getElementById('width').value);
+            
+            // 計算面積
+            var area = length * width;
+            
+            // 將面積顯示在結果區域
+            document.getElementById('result').innerHTML = "長方形的面積為： " + area;
+        }
+    </script>
+</head>
+<body>
+    <h2>計算長方形面積</h2>
+    <label for="length">長：</label>
+    <input type="number" id="length" placeholder="請輸入長" required><br><br>
+    <label for="width">寬：</label>
+    <input type="number" id="width" placeholder="請輸入寬" required><br><br>
+    <button onclick="calculateRectangleArea()">計算面積</button><br><br>
+    <div id="result"></div>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
